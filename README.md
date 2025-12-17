@@ -29,27 +29,19 @@ All required paths are added automatically inside each script.
 
 ## Repository structure
 AMR-4WS-Path-Tracking/
-│
 ├── main_project_demo.m
-│
 ├── tests/
-│ ├── testA_montecarlo_stability.m
-│ └── testB_loop_disturbance.m
-│
+│   ├── testA_montecarlo_stability.m
+│   └── testB_loop_disturbance.m
 ├── src/
-│ ├── rrt/ % RRT path planning utilities
-│ ├── path/ % path generation, reference lookup, error computation
-│ ├── loop/ % closed-loop looped-path utilities (arc-length based)
-│ └── utils/ % helper functions
-│
+│   ├── rrt/        % RRT path planning utilities
+│   ├── path/       % path generation, reference lookup, error computation
+│   ├── loop/       % closed-loop looped-path utilities (arc-length based)
+│   └── utils/      % helper functions
 └── README.md
 
+
 ---
-├── src/
-│   ├── rrt/        (RRT planning)
-│   ├── path/       (path & reference utilities)
-│   ├── loop/       (closed-loop track utilities)
-│   └── utils/      (helper functions)
 
 ## Notes
 
