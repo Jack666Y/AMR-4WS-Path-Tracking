@@ -28,6 +28,8 @@ All required paths are added automatically inside each script.
 ---
 
 ## Repository structure
+
+```text
 AMR-4WS-Path-Tracking/
 ├── main_project_demo.m
 ├── tests/
@@ -39,7 +41,6 @@ AMR-4WS-Path-Tracking/
 │   ├── loop/       % closed-loop looped-path utilities (arc-length based)
 │   └── utils/      % helper functions
 └── README.md
-
 
 ---
 
