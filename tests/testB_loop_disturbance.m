@@ -1,6 +1,6 @@
 clear; clc; close all;
 addpath(genpath(fullfile(fileparts(mfilename('fullpath')), '..', 'src')));
-%% FINAL: Closed-loop tracking on oval track with disturbances
+%% Closed-loop tracking on oval track with disturbances
 % Pure Pursuit + 4WS allocation + wheel PI + slip-speed tire + rigid-body dynamics
 clear; clc; close all;
 rng(11);
