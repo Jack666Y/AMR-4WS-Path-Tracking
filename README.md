@@ -1,12 +1,29 @@
 # AMR-4WS-Path-Tracking
 
-This repository implements closed-loop path tracking for a 4-wheel-steering (4WS) mobile robot.
-A Pure Pursuit controller is used as the outer-loop path follower, combined with a simplified
-vehicle model, wheel-speed PI control, and a slip-speed tire model.
+## Overview
 
-System performance is evaluated through:
-- Monte Carlo simulations under random initial conditions (stability evidence)
-- Closed-loop looped-path tracking under external disturbances (robustness evidence)
+This project implements a complete path planning and tracking pipeline for a
+four-wheel-steering (4WS) autonomous mobile robot. The main components are:
+
+- **Path Planning**
+  - Sampling-based planning using a Rapidly-exploring Random Tree (RRT)
+  - Obstacle inflation to provide safety margins during planning
+
+- **Path Representation and Reference Generation**
+  - Path resampling based on arc length for smooth tracking
+  - Forward-looking reference point selection for Pure Pursuit control
+  - Dedicated utilities for both open paths and closed-loop tracks
+
+- **Closed-loop Path Tracking**
+  - Pure Pursuit controller as the outer-loop path-following strategy
+  - 4WS kinematic allocation to generate wheel steering angles and speed commands
+
+- **Stability and Robustness Evaluation**
+  - Monte Carlo simulations under random initial conditions (Test A)
+  - Closed-loop looped-path tracking with external disturbances (Test B)
+
+This structure allows the planning, control, and evaluation components to be
+clearly separated while maintaining a fully integrated simulation framework.
 
 ---
 
