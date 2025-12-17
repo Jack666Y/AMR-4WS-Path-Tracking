@@ -45,6 +45,11 @@ AMR-4WS-Path-Tracking/
 └── README.md
 
 ---
+├── src/
+│   ├── rrt/        (RRT planning)
+│   ├── path/       (path & reference utilities)
+│   ├── loop/       (closed-loop track utilities)
+│   └── utils/      (helper functions)
 
 ## Notes
 
